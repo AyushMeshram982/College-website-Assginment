@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #red-background{
+            background-color: #8C1515;
+            height: 150px;
+            width: 100%;
+            color: white;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        #logo img{
+            width: 90px;
+            height: 90px;
+            position: absolute;
+            left: 220px;
+            top: 27px;
+        }
+
+        #college-English{
+            position: absolute;
+            left: 330px;
+            top: 35px;
+            font-size: 23px;
+        }
+
+        #college-Hindi{
+            position: absolute;
+            left: 330px;
+            top: 70px;
+            font-size: 23px;
+        }
+
+        #search{
+            position: absolute;
+            right: 180px;
+            top: 50px;
+            width: 170px;
+            height: 30px;
+            border-radius:7px;
+        }
+
+        ::placeholder {
+            padding-left: 5px;
+            font-size: 15px;
+        }
+
+        
+
+        #nav-list{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        #nav-list li{
+            float: left;
+
+        }
+
+        #nav-list li a{
+            text-decoration: none;
+            color: #242121;
+            padding: 20px;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #calender-logo{
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+            margin-bottom: 100px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="red-background">
+        <div id="logo">
+            <img src="davv2logo.png" alt="Davv">
+            <h3 id="college-English">Institute of Engineering and Technology</h3>
+            <h3 id="college-Hindi">देवी अहिल्या विश्वविद्यालय</h3>
+        </div>
+
+        <div>
+            <input type="search" id="search" placeholder="search">
+        </div>
+    </div>
+
+    <div id="nav-div">
+        <nav>
+            <ul id="nav-list">
+                <li><a href="./college-website-Home.html">Home</a></li>
+                <li><a href="./college-website-About-us.html">About us</a></li>
+                <li><a href="#">Academic calender</a></li>
+                <li><a href="./college-website-registration-form.html">Register</a></li>
+                <li><a href="college-website-Reachus.html">Reach us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="calender-logo">
+        <img src="	https://www.ietdavv.edu.in/images/downloads/Admission/Academic_Calender_2425.jpg" alt="">
+    </div>
+</body>
+</html>

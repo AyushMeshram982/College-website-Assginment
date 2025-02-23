@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #red-background{
+            background-color: #8C1515;
+            height: 150px;
+            width: 100%;
+            color: white;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        #logo img{
+            width: 90px;
+            height: 90px;
+            position: absolute;
+            left: 220px;
+            top: 27px;
+        }
+
+        #college-English{
+            position: absolute;
+            left: 330px;
+            top: 35px;
+            font-size: 23px;
+        }
+
+        #college-Hindi{
+            position: absolute;
+            left: 330px;
+            top: 70px;
+            font-size: 23px;
+        }
+
+        #search{
+            position: absolute;
+            right: 180px;
+            top: 50px;
+            width: 170px;
+            height: 30px;
+            border-radius:7px;
+        }
+
+        ::placeholder {
+            padding-left: 5px;
+            font-size: 15px;
+        }
+
+        
+
+        #nav-list{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        #nav-list li{
+            float: left;
+
+        }
+
+        #nav-list li a{
+            text-decoration: none;
+            color: #242121;
+            padding: 20px;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #registration-form span{
+           
+            display: block;
+            margin: 20px;
+        }
+
+        #register-text{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #8C1515;
+            font-size: 25px;
+            position: absolute;
+            left: 36%;
+            margin-top: 30px;
+        }
+
+        #form{
+            position: absolute;
+            left: 35%;
+            margin-top: 80px;
+        }
+
+        #form ::placeholder{
+            color:#242121;
+            font-size: 12px;
+           
+        }
+
+        #name, #email, #password, #mob-number, #date, #submit, #reset{
+            margin: 10px;
+        }
+
+        #submit, #reset{
+            color: #242121;
+            font-size: 17px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="red-background">
+        <div id="logo">
+            <img src="davv2logo.png" alt="Davv">
+            <h3 id="college-English">Institute of Engineering and Technology</h3>
+            <h3 id="college-Hindi">देवी अहिल्या विश्वविद्यालय</h3>
+        </div>
+
+        <div>
+            <input type="search" id="search" placeholder="search">
+        </div>
+    </div>
+
+    <div id="nav-div">
+        <nav>
+            <ul id="nav-list">
+                <li><a href="./college-website-Home.html">Home</a></li>
+                <li><a href="./college-website-About-us.html">About us</a></li>
+                <li><a href="./college-website-AcademicCalender.html">Academic calender</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="./college-website-Reachus.html">Reach us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="registration-form">
+        <p id="register-text"><strong>Register</strong></p>
+        <form action="./college-website-Home.html" id="form">
+            <span > Name: <input type="text" id="name" placeholder="Name"> </span>
+            <span > Email: <input type="email" id="email" placeholder="Email"></span>
+            <span >  Password: <input type="password" id="password" placeholder="password"></span>
+            <span > Mob Number: <input type="number" id="mob-number" placeholder="mob-number"></span>
+            <span >  DOB: <input type="date" id="dob" placeholder="D.O.B."></span>
+            <span > <input type="submit" id="submit">
+                   <input type="reset" id="reset"></span>
+
+        </form>
+    </div>
+</body>
+</html>
